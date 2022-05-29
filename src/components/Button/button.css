@@ -1,0 +1,23 @@
+.app--btn {
+  background: teal;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.app--btn:hover {
+  opacity: 0.8;
+}
+
+.app--btn:disabled {
+  background-color: #dfdfdf;
+  cursor: auto;
+}
+
+.app--btn:disabled:hover {
+  opacity: 1;
+}
