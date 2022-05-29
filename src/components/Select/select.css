@@ -1,0 +1,77 @@
+.select {
+  position: relative;
+}
+
+.select--pick {
+  padding: 0.5rem 1rem;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.select--pick__active {
+  opacity: 0.8;
+  border-color: teal;
+}
+
+.select--pick__selected {
+  font-weight: bold;
+}
+
+.select--triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  transition: 0.2s ease-in-out;
+}
+
+.select--pick__disabled .select--triangle {
+  border-color: transparent;
+}
+
+.select--triangle__active {
+  transform: rotate(180deg);
+}
+
+.select--modes {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  visibility: hidden;
+  height: 0;
+  width: 100%;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+}
+
+.select--modes__open {
+  height: auto;
+  visibility: visible;
+  width: 100%;
+  background-color: teal;
+  border-radius: 5px;
+  top: 50px;
+}
+
+.select--modes li {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #dfdfdf;
+  color: #dfdfdf;
+  cursor: pointer;
+  transition: font-weight 0.2s ease;
+}
+
+.select--modes li:hover {
+  font-weight: bold;
+}
+
+.select--modes li:last-child {
+  border-bottom: none;
+}
