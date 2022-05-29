@@ -1,10 +1,10 @@
 .select {
   position: relative;
+  flex: 1 0 250px;
 }
 
 .select--pick {
   padding: 0.5rem 1rem;
-  width: 250px;
   display: flex;
   align-items: center;
   justify-content: space-between;
