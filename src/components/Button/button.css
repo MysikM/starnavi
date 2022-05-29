@@ -13,6 +13,10 @@
   opacity: 0.8;
 }
 
+.app--btn__active {
+  background-color: cornflowerblue;
+}
+
 .app--btn:disabled {
   background-color: #dfdfdf;
   cursor: auto;

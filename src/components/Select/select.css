@@ -21,6 +21,11 @@
   font-weight: bold;
 }
 
+.select--pick__disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
 .select--triangle {
   width: 0;
   height: 0;
