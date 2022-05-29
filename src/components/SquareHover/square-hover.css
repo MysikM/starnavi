@@ -1,0 +1,23 @@
+.hover-squares--title {
+  text-align: center;
+}
+
+.hover-squares--list {
+  width: 100%;
+  margin-top: 1rem;
+  overflow-y: scroll;
+  height: 50vh;
+}
+
+.hover-squares--list::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.hover-squares--list::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.hover-squares--list::-webkit-scrollbar-thumb {
+  background-color: cornflowerblue;
+  border-radius: 10px;
+}
