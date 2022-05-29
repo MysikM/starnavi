@@ -5,6 +5,7 @@ import {Game} from "../../context/GameLogic/GameLogic";
 
 const Select = () => {
     const [isSelectActive, setIsSelectActive] = useState(false);
+
     const {modes, modePick, setModePick} = useContext(Mode);
     const {isGameStart} = useContext(Game);
 

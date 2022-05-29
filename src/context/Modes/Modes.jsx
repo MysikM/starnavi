@@ -1,4 +1,5 @@
 import React, {createContext, useEffect, useState} from 'react';
+import {URL} from "../../data/variables";
 
 export const Mode = createContext(null);
 
@@ -9,13 +10,14 @@ const Modes = ({children}) => {
 
     const loadMode = async () => {
         try{
-            const response = await fetch('http://demo7919674.mockable.io/');
+            const response = await fetch(URL);
             setModes(await response.json());
         } catch (e) {
             alert(`${e.message}, we try to restart the page for the correct work this app`);
             window.location.reload();
         }
-    }
+    };
+
     useEffect(()=>{
         loadMode();
     },[]);

@@ -1,5 +1,4 @@
 import React, {useContext, useEffect, useMemo, useState} from 'react';
-import './grid.css';
 import {Mode} from "../../context/Modes/Modes";
 import Row from "../Row/Row";
 import {ROW__ELEMENT} from "../../data/variables";
